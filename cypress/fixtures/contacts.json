@@ -1,0 +1,27 @@
+{
+    "Name": "Pessoa 1",
+    "Neighborhood": "Pinheiros",
+    "ZipCode": 86200655,
+    "Register": "69.971.558/0001-10",
+    "OriginId": 2,
+    "CompanyId": 3,
+    "StreetAddressNumber": "105",
+    "TypeId": 1,
+    "Phones": [
+        {
+            "PhoneNumber": "(21) 9999-9999",
+            "TypeId": 4,
+            "CountryId": 1
+        }
+    ],
+    "OtherProperties": [
+        {
+            "FieldKey": "alsjas-asadj-1a3s4a",
+            "StringValue": "FieldKey"
+        },
+        {
+            "FieldKey": "5as6as-2asd8d-a5a1de",
+            "IntegerValue": 5
+        }
+    ]
+}

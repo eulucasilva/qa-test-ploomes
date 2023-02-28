@@ -6,7 +6,9 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://api2.ploomes.com',
-    $schema: "https://on.cypress.io/cypress.schema.json",
-    specPattern: "cypress/e2e",
-  },  
+    $schema: 'https://on.cypress.io/cypress.schema.json',
+    specPattern: 'cypress/e2e',
+    defaultCommandTimeout: 15000
+  }, 
+  urlFront: 'https://app10.ploomes.com/' 
 });

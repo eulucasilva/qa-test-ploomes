@@ -24,6 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 const authorization = `${Cypress.env('ACCESS_TOKEN')}`
+import login from '../support/pages/login'
 
 Cypress.Commands.add('getRequest', (endpoint) =>  {
     cy.request({
@@ -68,3 +69,10 @@ Cypress.Commands.add('patchRequest', (endpoint, data) =>  {
     });
     
 })
+
+Cypress.Commands.add('login', () => {
+    cy.visit(Cypress.config('urlFront'));
+    login.preencherDadosLogin();
+    login.fazerLogin();
+    login.validarLogin();
+  });

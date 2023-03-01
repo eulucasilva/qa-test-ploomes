@@ -10,7 +10,7 @@ class Deal {
 
     listarNegocios(){
         cy.get('button').contains('Negócios').click();
-        cy.contains('a', 'Novo negócio').should('be.visible');
+        cy.contains('div', nomeNegocio).should('be.visible');
         cy.url().should('contain', 'funnel')
     }
 

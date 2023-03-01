@@ -13,15 +13,20 @@ describe('CRUD Negócios', () => {
     beforeEach(() => {
         cy.login()
     });
-    it('Validar criação de um negócio', () => {
+    it('Validar cadastro de um negócio', () => {
         deal.listarNegocios();
         deal.criarNegocio();
         deal.validarNegocio(nomeNegocio, valorNegocio);
     });
 
+    
+    it('Validar listagem de negócios', () => {
+        deal.listarNegocios();
+    });
+
     it('Validar edição de um negócio', () => {
         deal.listarNegocios();
-        deal.editarNegocio()
+        deal.editarNegocio();
         deal.validarNegocio(nomenovoNegocio, valornovoNegocio);
     });
 
@@ -29,10 +34,6 @@ describe('CRUD Negócios', () => {
         deal.listarNegocios();
         deal.excluirNegocio();
         deal.validarExclusaoNegocio();  
-    });
-
-    it('Validar listagem de negócios', () => {
-        deal.listarNegocios();
     });
 
 });

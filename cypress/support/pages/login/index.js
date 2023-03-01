@@ -1,11 +1,9 @@
-const email = `${Cypress.env('EMAIL')}`
-const password = `${Cypress.env('PASSWORD')}`
 
 const el = require ('./elements').ELEMENTS;
 
 class Login {
 
-    preencherDadosLogin(){
+    preencherDadosLogin(email, password){
         cy.get(el.inputEmail).type(email)
         cy.get(el.inputSenha).type(password);
     }
@@ -17,8 +15,12 @@ class Login {
     
 
     validarLogin(){
+        
         cy.get('div#centerRender').should('be.visible');
-        //cy.get('[class="side-wrapper"]', { timeout: 15000 });
+    }
+
+    validarErroLogin(){
+        cy.get('span').contains('E-mail ou senha incorretos').should('be.visible');
     }
 
 }

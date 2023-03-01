@@ -24,7 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 const authorization = `${Cypress.env('ACCESS_TOKEN')}`
+
 import login from '../support/pages/login'
+
+
 
 Cypress.Commands.add('getRequest', (endpoint) =>  {
     cy.request({
@@ -70,9 +73,14 @@ Cypress.Commands.add('patchRequest', (endpoint, data) =>  {
     
 })
 
-Cypress.Commands.add('login', () => {
+Cypress.Commands.add('login', (email, password) => {
     cy.visit(Cypress.config('urlFront'));
-    login.preencherDadosLogin();
+    login.preencherDadosLogin(email, password);
     login.fazerLogin();
-    login.validarLogin();
+    if(email != `${Cypress.env('EMAIL')}` || password != `${Cypress.env('PASSWORD')}`){
+        login.validarErroLogin();
+    }
+    else {
+        login.validarLogin();
+    }
   });

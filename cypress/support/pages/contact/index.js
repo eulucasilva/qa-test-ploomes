@@ -23,6 +23,7 @@ class Contact {
 
     editarCliente(){
         cy.get('a').contains('Pessoas').click();
+        cy.get('a').contains('Pessoas').click();
         cy.contains('div', nomeCliente).click();
         cy.get('a').contains('Opções').click();
         cy.get('a').contains('Editar cliente').click();

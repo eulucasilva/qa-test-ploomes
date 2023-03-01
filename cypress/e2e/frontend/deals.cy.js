@@ -2,6 +2,9 @@
 
 import deal from '../../support/pages/deal'
 
+const email = `${Cypress.env('EMAIL')}`
+const password = `${Cypress.env('PASSWORD')}`
+
 var nomeNegocio = "Negócio 1";
 var nomenovoNegocio = "Negócio 2";
 
@@ -11,7 +14,7 @@ var valornovoNegocio = "480,00";
 describe('CRUD Negócios', () => {
 
     beforeEach(() => {
-        cy.login()
+        cy.login(email, password);
     });
     it('Validar cadastro de um negócio', () => {
         deal.listarNegocios();

@@ -23,6 +23,7 @@ FRONTEND: </br>
 - Login
 - CRUD Clientes
 - CRUD Negócios
+- CRUD Produtos (Automação extra)
 
 
 

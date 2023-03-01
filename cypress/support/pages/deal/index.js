@@ -14,7 +14,7 @@ class Deal {
         cy.url().should('contain', 'funnel')
     }
 
-    criarNegocio(){
+    cadastrarNegocio(){
         cy.get('a').contains('Novo negócio').click();
         cy.get(el.inputNomeNegocio).type(nomeNegocio, { force: true });
         cy.get(el.inputValorNegocio).type(valorNegocio, { force: true });

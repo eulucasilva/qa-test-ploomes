@@ -18,7 +18,7 @@ describe('CRUD Negócios', () => {
     });
     it('Validar cadastro de um negócio', () => {
         deal.listarNegocios();
-        deal.criarNegocio();
+        deal.cadastrarNegocio();
         deal.validarNegocio(nomeNegocio, valorNegocio);
     });
 

@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 import contacts from "../../fixtures/contacts.json";
-import spok from 'cy-spok';
 
 var Id;
 var Name = 'Pessoa 2';

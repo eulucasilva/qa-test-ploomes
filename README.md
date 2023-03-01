@@ -1,4 +1,57 @@
-# QA Developer Test
+# QA Developer Test - Ploomes
+
+
+### Tópicos
+
+- [Descrição do projeto](#descrição) </br>
+- [Funcionalidades testadas](#funcionalidades-testadas) </br>
+- [Executando o projeto](#executando-o-projeto) </br>
+- [Limitações](#limitações) </br>
+
+
+## Descrição
+
+<p>Este projeto de automação web com Cypress foi desenvolvido para avaliar habilidades para ser colaborador da Ploomes e fazer parte do time de QA</p>
+
+
+## Funcionalidades testadas
+- API: </br>
+- CRUD Clientes
+- CRUD Negócios
+
+- FRONTEND: </br>
+- Login
+- CRUD Clientes
+- CRUD Negócios
+
+
+
+## Executando o projeto
+
+<p>Para executar o projeto é necessário:</p>
+
+- Baixar as dependências do Maven no projeto (caso nao baixa automaticamente ao importar o projeto);
+- Localizar a classe java RunnerTest em <i>src/test/java/runners</i>;
+- Clicar no ícone PLAY para executar o projeto de testes.
+
+## Limitações 
+
+<p></p>
+
+# Autor
+
+| [<img src="https://avatars.githubusercontent.com/u/17802288?v=4" width=115><br><sub>Lucas dos Santos Silva</sub>](https://github.com/eulucasilva) | 
+|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+
+
+
+
+
+
+
+
+
+
 
 Parabéns por chegar até esta fase do processo seletivo para Desenvolvedor QA.
 

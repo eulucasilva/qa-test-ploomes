@@ -15,11 +15,11 @@
 
 
 ## Funcionalidades testadas
-- API: </br>
+API: </br>
 - CRUD Clientes
 - CRUD Negócios
 
-- FRONTEND: </br>
+FRONTEND: </br>
 - Login
 - CRUD Clientes
 - CRUD Negócios
@@ -30,9 +30,7 @@
 
 <p>Para executar o projeto é necessário:</p>
 
-- Baixar as dependências do Maven no projeto (caso nao baixa automaticamente ao importar o projeto);
-- Localizar a classe java RunnerTest em <i>src/test/java/runners</i>;
-- Clicar no ícone PLAY para executar o projeto de testes.
+- 
 
 ## Limitações 
 

@@ -1,0 +1,154 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-03-02T12:27:32.095Z",
+    "end": "2023-03-02T12:29:32.146Z",
+    "duration": 120051,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5ae66b8e-bdb9-4a79-9ff0-ce52f9f0e622",
+      "title": "",
+      "fullFile": "cypress/e2e/frontend/products.cy.js",
+      "file": "cypress/e2e/frontend/products.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17adcec5-0806-4a94-9289-484c88bf3c9e",
+          "title": "CRUD Produtos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar cadastro de um produto",
+              "fullTitle": "CRUD Produtos Validar cadastro de um produto",
+              "timedOut": null,
+              "duration": 65826,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_product.default.listarProdutos();\n_product.default.cadastrarProdutos();\n_product.default.validarProduto();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `div[class=\"toast toast-success\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `div[class=\"toast toast-success\"]`, but never found it.\n    at Product.validarProduto (webpack:///./cypress/support/pages/product/index.js:33:30)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:18:16)",
+                "diff": null
+              },
+              "uuid": "284c5c5c-0bfc-42fc-9e54-8dd61540bb62",
+              "parentUUID": "17adcec5-0806-4a94-9289-484c88bf3c9e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar listagem de um produto",
+              "fullTitle": "CRUD Produtos Validar listagem de um produto",
+              "timedOut": null,
+              "duration": 17128,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_product.default.listarProdutos();",
+              "err": {},
+              "uuid": "f81c356c-0b26-4843-87fa-7c720f26d466",
+              "parentUUID": "17adcec5-0806-4a94-9289-484c88bf3c9e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar exclusão de um produto",
+              "fullTitle": "CRUD Produtos Validar exclusão de um produto",
+              "timedOut": null,
+              "duration": 36463,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_product.default.listarProdutos();\n_product.default.excluirProduto();\n_product.default.validarProduto();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `div[class=\"toast toast-success\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `div[class=\"toast toast-success\"]`, but never found it.\n    at Product.validarProduto (webpack:///./cypress/support/pages/product/index.js:33:30)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:28:16)",
+                "diff": null
+              },
+              "uuid": "6d418a29-b156-4be7-93a4-d48571def369",
+              "parentUUID": "17adcec5-0806-4a94-9289-484c88bf3c9e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f81c356c-0b26-4843-87fa-7c720f26d466"
+          ],
+          "failures": [
+            "284c5c5c-0bfc-42fc-9e54-8dd61540bb62",
+            "6d418a29-b156-4be7-93a4-d48571def369"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 119417,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

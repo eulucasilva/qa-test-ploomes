@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-02T12:23:01.862Z",
+    "end": "2023-03-02T12:24:41.499Z",
+    "duration": 99637,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "db6b8366-091f-495e-bdde-23092b399613",
+      "title": "",
+      "fullFile": "cypress/e2e/frontend/contacts.cy.js",
+      "file": "cypress/e2e/frontend/contacts.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f72db937-848a-4a77-af75-bd25ae35e694",
+          "title": "CRUD Clientes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar cadastro de um cliente",
+              "fullTitle": "CRUD Clientes Validar cadastro de um cliente",
+              "timedOut": null,
+              "duration": 38699,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_contact.default.listarClientes();\n_contact.default.cadastrarCliente();\n_contact.default.validarCliente(nomeCliente);",
+              "err": {},
+              "uuid": "fe89238d-309b-4352-bbd5-b696ef59038a",
+              "parentUUID": "f72db937-848a-4a77-af75-bd25ae35e694",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar listagem de clientes",
+              "fullTitle": "CRUD Clientes Validar listagem de clientes",
+              "timedOut": null,
+              "duration": 16426,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_contact.default.listarClientes();",
+              "err": {},
+              "uuid": "4141904c-f07f-4207-9e2f-5dcb26eb0b14",
+              "parentUUID": "f72db937-848a-4a77-af75-bd25ae35e694",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar edição de um cliente",
+              "fullTitle": "CRUD Clientes Validar edição de um cliente",
+              "timedOut": null,
+              "duration": 22233,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_contact.default.listarClientes();\n_contact.default.editarCliente();\n_contact.default.validarCliente(nomeNovoCliente);",
+              "err": {},
+              "uuid": "95f4f148-da1f-4542-8885-51efc25aa4d8",
+              "parentUUID": "f72db937-848a-4a77-af75-bd25ae35e694",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar exclusão de um cliente",
+              "fullTitle": "CRUD Clientes Validar exclusão de um cliente",
+              "timedOut": null,
+              "duration": 21660,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_contact.default.listarClientes();\n_contact.default.excluirCliente();\n_contact.default.validarExclusaoCliente();",
+              "err": {},
+              "uuid": "4f3c3cf4-595b-4720-ac4c-76874e5c413f",
+              "parentUUID": "f72db937-848a-4a77-af75-bd25ae35e694",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fe89238d-309b-4352-bbd5-b696ef59038a",
+            "4141904c-f07f-4207-9e2f-5dcb26eb0b14",
+            "95f4f148-da1f-4542-8885-51efc25aa4d8",
+            "4f3c3cf4-595b-4720-ac4c-76874e5c413f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 99018,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

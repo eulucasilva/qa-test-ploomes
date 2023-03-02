@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-02T12:25:04.982Z",
+    "end": "2023-03-02T12:26:48.970Z",
+    "duration": 103988,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ee26ed8b-d4d1-45a0-ab9a-2455a54d268e",
+      "title": "",
+      "fullFile": "cypress/e2e/frontend/deals.cy.js",
+      "file": "cypress/e2e/frontend/deals.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5dda583e-a9f0-4077-ac9b-55bd4e6ec0d9",
+          "title": "CRUD Negócios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar cadastro de um negócio",
+              "fullTitle": "CRUD Negócios Validar cadastro de um negócio",
+              "timedOut": null,
+              "duration": 28391,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_deal.default.listarNegocios();\n_deal.default.cadastrarNegocio();\n_deal.default.validarNegocio(nomeNegocio, valorNegocio);",
+              "err": {},
+              "uuid": "eb0bc26d-00d8-4e6f-8b40-46d57959d5c0",
+              "parentUUID": "5dda583e-a9f0-4077-ac9b-55bd4e6ec0d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar listagem de negócios",
+              "fullTitle": "CRUD Negócios Validar listagem de negócios",
+              "timedOut": null,
+              "duration": 16541,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_deal.default.listarNegocios();",
+              "err": {},
+              "uuid": "2a70a785-2d71-47c9-a8bb-2190e2bc5326",
+              "parentUUID": "5dda583e-a9f0-4077-ac9b-55bd4e6ec0d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar edição de um negócio",
+              "fullTitle": "CRUD Negócios Validar edição de um negócio",
+              "timedOut": null,
+              "duration": 31179,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_deal.default.listarNegocios();\n_deal.default.editarNegocio();\n_deal.default.validarNegocio(nomenovoNegocio, valornovoNegocio);",
+              "err": {},
+              "uuid": "c7654ce5-3a48-40ab-8c20-730fb9aab0a5",
+              "parentUUID": "5dda583e-a9f0-4077-ac9b-55bd4e6ec0d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar exclusão de um negócio",
+              "fullTitle": "CRUD Negócios Validar exclusão de um negócio",
+              "timedOut": null,
+              "duration": 27186,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_deal.default.listarNegocios();\n_deal.default.excluirNegocio();\n_deal.default.validarExclusaoNegocio();",
+              "err": {},
+              "uuid": "177e61c2-1534-457b-bfbb-9761d96de26c",
+              "parentUUID": "5dda583e-a9f0-4077-ac9b-55bd4e6ec0d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb0bc26d-00d8-4e6f-8b40-46d57959d5c0",
+            "2a70a785-2d71-47c9-a8bb-2190e2bc5326",
+            "c7654ce5-3a48-40ab-8c20-730fb9aab0a5",
+            "177e61c2-1534-457b-bfbb-9761d96de26c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 103297,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

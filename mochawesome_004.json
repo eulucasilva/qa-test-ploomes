@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-02T12:27:12.353Z",
+    "end": "2023-03-02T12:27:26.261Z",
+    "duration": 13908,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d3c77fc9-7ae8-4b1d-b0bc-d06602227e82",
+      "title": "",
+      "fullFile": "cypress/e2e/frontend/login.cy.js",
+      "file": "cypress/e2e/frontend/login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "128ea903-3213-4668-a63f-7e4be27121e9",
+          "title": "Login no Ploomes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar login com sucesso no Ploomes",
+              "fullTitle": "Login no Ploomes Validar login com sucesso no Ploomes",
+              "timedOut": null,
+              "duration": 8208,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(email, password);",
+              "err": {},
+              "uuid": "6fb4958e-d8c0-4b33-83e1-43aea92fb726",
+              "parentUUID": "128ea903-3213-4668-a63f-7e4be27121e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar login com email e/ou senha incorretos",
+              "fullTitle": "Login no Ploomes Validar login com email e/ou senha incorretos",
+              "timedOut": null,
+              "duration": 5615,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(\"lucasteste@qa.com\", \"123456abc\");",
+              "err": {},
+              "uuid": "e65a24cf-3ffb-4467-b1db-ef892856e6a3",
+              "parentUUID": "128ea903-3213-4668-a63f-7e4be27121e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6fb4958e-d8c0-4b33-83e1-43aea92fb726",
+            "e65a24cf-3ffb-4467-b1db-ef892856e6a3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13823,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

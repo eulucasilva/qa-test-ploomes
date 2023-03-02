@@ -1,8 +1,8 @@
 const el = require ('./elements').ELEMENTS;
 require('cypress-plugin-tab') // biblioteca para usar o recurso de tabulação e facilitar a manipulação do DOM
 
-var nomeProduto= "Produto 1";
-var nomeGrupo= "Grupo" + new Date().getTime();
+let nomeProduto= "Produto 1";
+let nomeGrupo= "Grupo" + new Date().getTime();
 
 class Product {
     

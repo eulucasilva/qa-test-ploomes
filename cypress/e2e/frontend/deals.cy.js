@@ -5,11 +5,11 @@ import deal from '../../support/pages/deal'
 const email = `${Cypress.env('EMAIL')}`
 const password = `${Cypress.env('PASSWORD')}`
 
-var nomeNegocio = "Negócio 1";
-var nomenovoNegocio = "Negócio 2";
+let nomeNegocio = "Negócio 1";
+let nomenovoNegocio = "Negócio 2";
 
-var valorNegocio = "350,00";
-var valornovoNegocio = "480,00";
+let valorNegocio = "350,00";
+let valornovoNegocio = "480,00";
 
 describe('CRUD Negócios', () => {
 

@@ -5,8 +5,8 @@ import contact from '../../support/pages/contact'
 const email = `${Cypress.env('EMAIL')}`
 const password = `${Cypress.env('PASSWORD')}`
 
-var nomeCliente = "Cliente 1";
-var nomeNovoCliente = "Cliente 2";
+let nomeCliente = "Cliente 1";
+let nomeNovoCliente = "Cliente 2";
 
 describe('CRUD Clientes', () => {
     beforeEach(() => {

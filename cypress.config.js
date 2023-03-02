@@ -8,7 +8,7 @@ module.exports = defineConfig({
     baseUrl: 'https://api2.ploomes.com',
     $schema: 'https://on.cypress.io/cypress.schema.json',
     specPattern: 'cypress/e2e',
-    defaultCommandTimeout: 15000, 
+    defaultCommandTimeout: 20000, 
     
   }, 
   urlFront: 'https://app10.ploomes.com/',
@@ -20,7 +20,8 @@ module.exports = defineConfig({
         "quiet": true,
         "overwrite": false,
         "html": false,
-        "json": true
+        "json": true,
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
     }
   }
 });

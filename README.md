@@ -3,18 +3,18 @@
 
 ### Tópicos
 
-- [Descrição do projeto](#📄-descrição) </br>
+- [Descrição do projeto](#📄descrição) </br>
 - [Funcionalidades testadas](#✅-funcionalidades-testadas) </br>
-- [Executando o projeto](#🛠️-executando-o-projeto) </br>
-- [Limitações](#❗-limitações) </br>
+- [Executando o projeto](#🛠️executando-o-projeto) </br>
+- [Limitações](#❗limitações) </br>
 
 
-## 📄 Descrição
+## 📄Descrição
 
 <p>Este projeto de automação web com Cypress foi desenvolvido para avaliar habilidades para ser colaborador da Ploomes e fazer parte do time de QA.</p>
 
 
-## ✅ Funcionalidades testadas
+## ✅Funcionalidades testadas
 API: </br>
 - CRUD Clientes;
 - CRUD Negócios;
@@ -27,7 +27,7 @@ FRONTEND: </br>
 
 
 
-##  🛠️ Executando o projeto
+##  🛠️Executando o projeto
 
 <p>Para executar o projeto é necessário:</p>
 
@@ -48,7 +48,7 @@ npm install
 npm run cy:run
 ```
 
-## ❗ Limitações 
+## ❗Limitações 
 
 <p></p>
 

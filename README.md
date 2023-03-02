@@ -39,7 +39,7 @@ npm install
 ```
 npm run cy:run
 ```
-## ❗ Relatório gerado (GitHub Actions)
+## 📄 Relatório gerado (GitHub Actions)
 
 https://eulucasilva.github.io/qa-test-ploomes/
 

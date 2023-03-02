@@ -20,7 +20,7 @@ class Product {
         cy.get(el.btnSalvarGrupo).click();
         cy.wait(10000)
         cy.get('button').contains('Salvar').click();
-        cy.wait(10000)
+        cy.wait(5000)
     }
 
     excluirProduto (){
@@ -30,7 +30,7 @@ class Product {
     }
 
     validarProduto(){
-        cy.get(el.msgSucesso).should('contain', 'Sucesso');
+        cy.get('div').contains(nomeProduto).should('be.visible');
     }
 }
 

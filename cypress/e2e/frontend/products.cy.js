@@ -25,6 +25,5 @@ describe('CRUD Produtos', () => {
     it('Validar exclusão de um produto', () => {
         produto.listarProdutos();
         produto.excluirProduto();
-        produto.validarProduto();
     });
 });

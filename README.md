@@ -23,7 +23,7 @@ FRONTEND: </br>
 
 <p>Para executar o projeto é necessário:</p>
 
-- Instalar o Git e Clonar o repositório do projeto:
+- Instalar o Git e o Node.js e Clonar o repositório do projeto:
 
 ```
 https://github.com/eulucasilva/qa-test-ploomes

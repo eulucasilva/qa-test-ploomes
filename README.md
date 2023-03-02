@@ -1,14 +1,6 @@
 # QA Developer Test - Ploomes
 
 
-### Tópicos
-
-- [Descrição do projeto](#📄descrição) </br>
-- [Funcionalidades testadas](#✅-funcionalidades-testadas) </br>
-- [Executando o projeto](#🛠️executando-o-projeto) </br>
-- [Limitações](#❗limitações) </br>
-
-
 ## 📄Descrição
 
 <p>Este projeto de automação web com Cypress foi desenvolvido para avaliar habilidades para ser colaborador da Ploomes e fazer parte do time de QA.</p>

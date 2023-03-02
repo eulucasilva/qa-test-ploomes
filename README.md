@@ -1,13 +1,6 @@
 # QA Developer Test - Ploomes
 
 
-### Tópicos
-
-- [Descrição do projeto](#📄-descrição) </br>
-- [Funcionalidades testadas](#✅-funcionalidades-testadas) </br>
-- [Executando o projeto](#🛠️-executando-o-projeto) </br>
-- [Limitações](#❗-limitações) </br>
-
 
 ## 📄 Descrição
 

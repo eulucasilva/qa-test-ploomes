@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-02T17:27:22.541Z",
-    "end": "2023-03-02T17:27:39.792Z",
-    "duration": 17251,
+    "start": "2023-03-02T17:32:18.569Z",
+    "end": "2023-03-02T17:32:35.396Z",
+    "duration": 16827,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3b457bcb-766c-492b-b979-43e0808a8b1e",
+      "uuid": "4eff9886-d261-4245-a2cc-2000341e8f21",
       "title": "",
       "fullFile": "cypress/e2e/frontend/login.cy.js",
       "file": "cypress/e2e/frontend/login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c0372540-cce6-4991-a93b-5b977efacc1c",
+          "uuid": "f4055d3a-1111-4e3e-beaf-d74d47949698",
           "title": "Login no Ploomes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar login com sucesso no Ploomes",
               "fullTitle": "Login no Ploomes Validar login com sucesso no Ploomes",
               "timedOut": null,
-              "duration": 9697,
+              "duration": 9293,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.login(email, password);",
               "err": {},
-              "uuid": "ec4aabd9-46b5-43d4-81a2-c56251d10711",
-              "parentUUID": "c0372540-cce6-4991-a93b-5b977efacc1c",
+              "uuid": "9396b820-3272-4372-817b-7f3950e01c94",
+              "parentUUID": "f4055d3a-1111-4e3e-beaf-d74d47949698",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar login com email e/ou senha incorretos",
               "fullTitle": "Login no Ploomes Validar login com email e/ou senha incorretos",
               "timedOut": null,
-              "duration": 7418,
+              "duration": 7424,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.login(\"lucasteste@qa.com\", \"123456abc\");",
               "err": {},
-              "uuid": "252f32e8-c170-4bfd-bf3d-a3fd540769a9",
-              "parentUUID": "c0372540-cce6-4991-a93b-5b977efacc1c",
+              "uuid": "7836b684-2db6-4fe3-a0a3-94bcde2ab034",
+              "parentUUID": "f4055d3a-1111-4e3e-beaf-d74d47949698",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ec4aabd9-46b5-43d4-81a2-c56251d10711",
-            "252f32e8-c170-4bfd-bf3d-a3fd540769a9"
+            "9396b820-3272-4372-817b-7f3950e01c94",
+            "7836b684-2db6-4fe3-a0a3-94bcde2ab034"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17115,
+          "duration": 16717,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

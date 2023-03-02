@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 2,
-    "start": "2023-03-02T17:27:47.785Z",
-    "end": "2023-03-02T17:29:52.914Z",
-    "duration": 125129,
+    "start": "2023-03-02T17:32:43.103Z",
+    "end": "2023-03-02T17:35:06.406Z",
+    "duration": 143303,
     "testsRegistered": 3,
     "passPercent": 33.33333333333333,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e42d44ce-5870-4ef7-aea2-811348a02a7a",
+      "uuid": "43ff03fa-2c2c-48a3-8afb-15d7cc26e563",
       "title": "",
       "fullFile": "cypress/e2e/frontend/products.cy.js",
       "file": "cypress/e2e/frontend/products.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c42337c1-041b-4427-8929-e186affd43f9",
+          "uuid": "ea471430-a781-4952-b4bd-065758148fcc",
           "title": "CRUD Produtos",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar cadastro de um produto",
               "fullTitle": "CRUD Produtos Validar cadastro de um produto",
               "timedOut": null,
-              "duration": 67728,
+              "duration": 73421,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "_product.default.listarProdutos();\n_product.default.cadastrarProdutos();\n_product.default.validarProduto();",
               "err": {
-                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Salvar' within the element: <button.sc-dwLEzm.fORHkJ.sso-microsoft> but never did.",
-                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Salvar' within the element: <button.sc-dwLEzm.fORHkJ.sso-microsoft> but never did.\n    at Product.cadastrarProdutos (webpack:///./cypress/support/pages/product/index.js:22:25)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:17:16)",
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Produto 1' within the element: <div.intercom-lightweight-app> but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Produto 1' within the element: <div.intercom-lightweight-app> but never did.\n    at Product.validarProduto (webpack:///./cypress/support/pages/product/index.js:33:44)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:18:16)",
                 "diff": null
               },
-              "uuid": "1e31437d-c7af-4160-bbc8-0a9234837042",
-              "parentUUID": "c42337c1-041b-4427-8929-e186affd43f9",
+              "uuid": "93d44916-0381-4a77-93e4-ce3d295f4ca4",
+              "parentUUID": "ea471430-a781-4952-b4bd-065758148fcc",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Validar listagem de um produto",
               "fullTitle": "CRUD Produtos Validar listagem de um produto",
               "timedOut": null,
-              "duration": 22684,
+              "duration": 21515,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "_product.default.listarProdutos();",
               "err": {},
-              "uuid": "12a00b77-3757-4e32-a084-f97bf83bdcde",
-              "parentUUID": "c42337c1-041b-4427-8929-e186affd43f9",
+              "uuid": "50878236-f957-4dd1-a8ac-a10ed8ff4877",
+              "parentUUID": "ea471430-a781-4952-b4bd-065758148fcc",
               "isHook": false,
               "skipped": false
             },
@@ -78,7 +78,7 @@
               "title": "Validar exclusão de um produto",
               "fullTitle": "CRUD Produtos Validar exclusão de um produto",
               "timedOut": null,
-              "duration": 34098,
+              "duration": 46784,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -87,27 +87,27 @@
               "context": null,
               "code": "_product.default.listarProdutos();\n_product.default.excluirProduto();",
               "err": {
-                "message": "CypressError: Timed out retrying after 20000ms: `cy.contains()` failed because it requires a DOM element, window or document.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(button)",
-                "estack": "CypressError: Timed out retrying after 20000ms: `cy.contains()` failed because it requires a DOM element, window or document.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(button)\n    at isElement (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:151988:70)\n    at validateType (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:151846:14)\n    at Object.isType (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:151877:7)\n    at <unknown> (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:139141:22)\n    at Object.subjectFn (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:149851:16)\n    at $Cy.verifyUpcomingAssertions (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:131091:31)\n    at onRetry (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:149842:15)\n    at tryCatcher (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise.attempt.Promise.try (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6188:29)\n    at whenStable (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:146732:65)\n    at <unknown> (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:146173:14)\n    at tryCatcher (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:7031:18)\n    at Promise._fulfill (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6975:18)\n    at <unknown> (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:8589:46)\nFrom Your Spec Code:\n    at Product.listarProdutos (webpack:///./cypress/support/pages/product/index.js:10:25)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:26:16)",
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Grupo1677778363014' within the element: <div#widget-evoline-api-container> but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Grupo1677778363014' within the element: <div#widget-evoline-api-container> but never did.\n    at Product.excluirProduto (webpack:///./cypress/support/pages/product/index.js:27:22)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:27:16)",
                 "diff": null
               },
-              "uuid": "849b4111-3e2e-4fea-8d24-bd5be35eadb8",
-              "parentUUID": "c42337c1-041b-4427-8929-e186affd43f9",
+              "uuid": "9a2e8cc9-a2c1-443e-ad7f-d02b46cab70a",
+              "parentUUID": "ea471430-a781-4952-b4bd-065758148fcc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "12a00b77-3757-4e32-a084-f97bf83bdcde"
+            "50878236-f957-4dd1-a8ac-a10ed8ff4877"
           ],
           "failures": [
-            "1e31437d-c7af-4160-bbc8-0a9234837042",
-            "849b4111-3e2e-4fea-8d24-bd5be35eadb8"
+            "93d44916-0381-4a77-93e4-ce3d295f4ca4",
+            "9a2e8cc9-a2c1-443e-ad7f-d02b46cab70a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 124510,
+          "duration": 141720,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

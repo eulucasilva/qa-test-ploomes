@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 3,
-    "passes": 3,
+    "passes": 2,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-03-02T13:00:57.995Z",
-    "end": "2023-03-02T13:02:23.347Z",
-    "duration": 85352,
+    "failures": 1,
+    "start": "2023-03-02T17:22:56.372Z",
+    "end": "2023-03-02T17:24:52.903Z",
+    "duration": 116531,
     "testsRegistered": 3,
-    "passPercent": 100,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6cb81cf2-fd9c-4759-9426-1c86d2daea13",
+      "uuid": "e9e4537a-afca-42a9-b103-ee649cafd771",
       "title": "",
       "fullFile": "cypress/e2e/frontend/products.cy.js",
       "file": "cypress/e2e/frontend/products.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ebccd866-a80a-476c-8e97-95b8dc817e58",
+          "uuid": "ed831bd9-776e-4f1e-a390-b52ad063903e",
           "title": "CRUD Produtos",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,21 @@
               "title": "Validar cadastro de um produto",
               "fullTitle": "CRUD Produtos Validar cadastro de um produto",
               "timedOut": null,
-              "duration": 46304,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 65622,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "_product.default.listarProdutos();\n_product.default.cadastrarProdutos();\n_product.default.validarProduto();",
-              "err": {},
-              "uuid": "e14ce66d-4ca2-4685-b82f-db77b90a04e8",
-              "parentUUID": "ebccd866-a80a-476c-8e97-95b8dc817e58",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Produto 1' within the element: <div.intercom-lightweight-app> but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Produto 1' within the element: <div.intercom-lightweight-app> but never did.\n    at Product.validarProduto (webpack:///./cypress/support/pages/product/index.js:33:44)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:18:16)",
+                "diff": null
+              },
+              "uuid": "928a3cee-e39b-4bdc-8352-627e22634ec7",
+              "parentUUID": "ed831bd9-776e-4f1e-a390-b52ad063903e",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +60,7 @@
               "title": "Validar listagem de um produto",
               "fullTitle": "CRUD Produtos Validar listagem de um produto",
               "timedOut": null,
-              "duration": 17204,
+              "duration": 16517,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +69,8 @@
               "context": null,
               "code": "_product.default.listarProdutos();",
               "err": {},
-              "uuid": "e48517ae-2c43-4fda-8d6a-5af2bef11e58",
-              "parentUUID": "ebccd866-a80a-476c-8e97-95b8dc817e58",
+              "uuid": "8132e9a8-e6c3-4662-b7ed-4cd8f647e317",
+              "parentUUID": "ed831bd9-776e-4f1e-a390-b52ad063903e",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +78,7 @@
               "title": "Validar exclusão de um produto",
               "fullTitle": "CRUD Produtos Validar exclusão de um produto",
               "timedOut": null,
-              "duration": 21599,
+              "duration": 34017,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +87,23 @@
               "context": null,
               "code": "_product.default.listarProdutos();\n_product.default.excluirProduto();",
               "err": {},
-              "uuid": "004c662b-b803-42ff-a4ff-a343299430f4",
-              "parentUUID": "ebccd866-a80a-476c-8e97-95b8dc817e58",
+              "uuid": "78f8800f-8060-4b4a-b6fb-8e01db8e9dbb",
+              "parentUUID": "ed831bd9-776e-4f1e-a390-b52ad063903e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e14ce66d-4ca2-4685-b82f-db77b90a04e8",
-            "e48517ae-2c43-4fda-8d6a-5af2bef11e58",
-            "004c662b-b803-42ff-a4ff-a343299430f4"
+            "8132e9a8-e6c3-4662-b7ed-4cd8f647e317",
+            "78f8800f-8060-4b4a-b6fb-8e01db8e9dbb"
           ],
-          "failures": [],
+          "failures": [
+            "928a3cee-e39b-4bdc-8352-627e22634ec7"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 85107,
+          "duration": 116156,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -137,7 +142,8 @@
         "quiet": true,
         "overwrite": false,
         "html": false,
-        "json": true
+        "json": true,
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
       },
       "version": "6.2.0"
     }

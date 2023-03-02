@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-02T12:55:45.164Z",
-    "end": "2023-03-02T12:55:47.270Z",
-    "duration": 2106,
+    "start": "2023-03-02T17:17:41.259Z",
+    "end": "2023-03-02T17:17:43.260Z",
+    "duration": 2001,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "eb4895d0-a33f-42bb-9eca-6dc096aa719e",
+      "uuid": "415f0ee0-cc3a-4512-acb1-e13abf2275fd",
       "title": "",
       "fullFile": "cypress/e2e/api/contact.cy.js",
       "file": "cypress/e2e/api/contact.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1dbff197-4309-4242-9e06-de90d5cda917",
+          "uuid": "8eac4d20-9fc3-4365-80d8-c970dcdb087a",
           "title": "Testes (CRUD) do módulo Contatos da API Ploomes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar criação de um contato",
               "fullTitle": "Testes (CRUD) do módulo Contatos da API Ploomes Validar criação de um contato",
               "timedOut": null,
-              "duration": 1130,
+              "duration": 1045,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.postRequest('/Contacts', _contacts.default).then(postContactResponse => {\n  expect(postContactResponse.status).to.equal(200);\n  expect(postContactResponse.body.value[0]).to.have.property(\"Id\");\n  expect(postContactResponse.body.value[0].Name).not.to.be.empty;\n  Id = postContactResponse.body.value[0].Id;\n  cy.log(Id);\n});",
               "err": {},
-              "uuid": "a1021edc-e490-45d0-855a-c32fd565ff9b",
-              "parentUUID": "1dbff197-4309-4242-9e06-de90d5cda917",
+              "uuid": "d3ce30fa-fe68-4c39-9206-f8dc6f610aeb",
+              "parentUUID": "8eac4d20-9fc3-4365-80d8-c970dcdb087a",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar a consulta dos clientes",
               "fullTitle": "Testes (CRUD) do módulo Contatos da API Ploomes Validar a consulta dos clientes",
               "timedOut": null,
-              "duration": 328,
+              "duration": 319,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.getRequest('/Contacts').then(getContactResponse => {\n  expect(getContactResponse.status).to.equal(200);\n  expect(getContactResponse.body).to.be.not.null;\n});",
               "err": {},
-              "uuid": "bb2903ff-8010-4195-8525-4875f96c30af",
-              "parentUUID": "1dbff197-4309-4242-9e06-de90d5cda917",
+              "uuid": "a35d2e31-a840-4a9b-a262-635d0f824b13",
+              "parentUUID": "8eac4d20-9fc3-4365-80d8-c970dcdb087a",
               "isHook": false,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "cy.patchRequest('/Contacts(' + Id + ')', {\n  \"Name\": Name,\n  \"Neighborhood\": Neighborhood\n}).then(patchContactResponse => {\n  expect(patchContactResponse.status).to.equal(200);\n  expect(patchContactResponse.body.value[0].Name).to.equal(Name);\n  expect(patchContactResponse.body.value[0].Neighborhood).to.equal(Neighborhood);\n});",
               "err": {},
-              "uuid": "db846fe9-d966-4475-929a-79f2e990598c",
-              "parentUUID": "1dbff197-4309-4242-9e06-de90d5cda917",
+              "uuid": "ad1c8935-e3c5-415d-90d9-6ce88ee40ffa",
+              "parentUUID": "8eac4d20-9fc3-4365-80d8-c970dcdb087a",
               "isHook": false,
               "skipped": false
             },
@@ -101,23 +101,23 @@
               "context": null,
               "code": "cy.deleteRequest('/Contacts(' + Id + ')').then(deleteContactResponse => {\n  expect(deleteContactResponse.status).to.equal(200);\n  expect(deleteContactResponse.body).to.be.empty;\n});",
               "err": {},
-              "uuid": "866a8fab-7399-4b7b-94b3-1bf9326bce5d",
-              "parentUUID": "1dbff197-4309-4242-9e06-de90d5cda917",
+              "uuid": "f77a8f4d-d35c-41ad-91bc-390d72394816",
+              "parentUUID": "8eac4d20-9fc3-4365-80d8-c970dcdb087a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a1021edc-e490-45d0-855a-c32fd565ff9b",
-            "bb2903ff-8010-4195-8525-4875f96c30af",
-            "db846fe9-d966-4475-929a-79f2e990598c",
-            "866a8fab-7399-4b7b-94b3-1bf9326bce5d"
+            "d3ce30fa-fe68-4c39-9206-f8dc6f610aeb",
+            "a35d2e31-a840-4a9b-a262-635d0f824b13",
+            "ad1c8935-e3c5-415d-90d9-6ce88ee40ffa",
+            "f77a8f4d-d35c-41ad-91bc-390d72394816"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2064,
+          "duration": 1970,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -156,7 +156,8 @@
         "quiet": true,
         "overwrite": false,
         "html": false,
-        "json": true
+        "json": true,
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
       },
       "version": "6.2.0"
     }

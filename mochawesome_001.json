@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-02T12:55:50.704Z",
-    "end": "2023-03-02T12:55:52.156Z",
-    "duration": 1452,
+    "start": "2023-03-02T17:17:46.665Z",
+    "end": "2023-03-02T17:17:47.889Z",
+    "duration": 1224,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e1673709-abb4-4641-ab44-ded703a8f459",
+      "uuid": "29d54087-fc3a-4166-bf8d-4770390bf410",
       "title": "",
       "fullFile": "cypress/e2e/api/deals.cy.js",
       "file": "cypress/e2e/api/deals.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f97ba45f-5a31-4084-84b0-d781aebefe50",
+          "uuid": "cc9bf042-bf61-4f26-8aa7-c4724d7c0bd7",
           "title": "Testes (CRUD) do módulo Negócios da API Ploomes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar criação de um negócio",
               "fullTitle": "Testes (CRUD) do módulo Negócios da API Ploomes Validar criação de um negócio",
               "timedOut": null,
-              "duration": 415,
+              "duration": 389,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.postRequest('/Deals', _deals.default).then(postDealResponse => {\n  expect(postDealResponse.status).to.equal(200);\n  expect(postDealResponse.body.value[0]).to.have.property(\"Id\");\n  expect(postDealResponse.body.value[0].Title).not.to.be.empty;\n  Id = postDealResponse.body.value[0].Id;\n});",
               "err": {},
-              "uuid": "2091633b-0435-4e10-8c2b-2eb0e6774e44",
-              "parentUUID": "f97ba45f-5a31-4084-84b0-d781aebefe50",
+              "uuid": "7d68796f-4e57-4e96-b39d-c45882a1dbd7",
+              "parentUUID": "cc9bf042-bf61-4f26-8aa7-c4724d7c0bd7",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar a consulta dos negócios",
               "fullTitle": "Testes (CRUD) do módulo Negócios da API Ploomes Validar a consulta dos negócios",
               "timedOut": null,
-              "duration": 336,
+              "duration": 291,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.getRequest('/Deals').then(getDealResponse => {\n  expect(getDealResponse.status).to.equal(200);\n  expect(getDealResponse.body).to.be.not.null;\n});",
               "err": {},
-              "uuid": "625ee218-4f62-4fed-8dc9-93e25ab51008",
-              "parentUUID": "f97ba45f-5a31-4084-84b0-d781aebefe50",
+              "uuid": "10fb8087-5860-4534-a686-2bcc0fe6665d",
+              "parentUUID": "cc9bf042-bf61-4f26-8aa7-c4724d7c0bd7",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Validar a edição de um negócio",
               "fullTitle": "Testes (CRUD) do módulo Negócios da API Ploomes Validar a edição de um negócio",
               "timedOut": null,
-              "duration": 331,
+              "duration": 269,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "cy.patchRequest('/Deals(' + Id + ')', {\n  \"Title\": Title,\n  \"Amount\": Amount\n}).then(patchDealResponse => {\n  expect(patchDealResponse.status).to.equal(200);\n  expect(patchDealResponse.body.value[0].Title).to.equal(Title);\n  expect(patchDealResponse.body.value[0].Amount).to.equal(Amount);\n});",
               "err": {},
-              "uuid": "5031ff61-bfc7-4935-83f3-196966f1a7c1",
-              "parentUUID": "f97ba45f-5a31-4084-84b0-d781aebefe50",
+              "uuid": "2b3c6831-a3f4-4576-b794-788015561dee",
+              "parentUUID": "cc9bf042-bf61-4f26-8aa7-c4724d7c0bd7",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "Validar a exclusão de um negócio",
               "fullTitle": "Testes (CRUD) do módulo Negócios da API Ploomes Validar a exclusão de um negócio",
               "timedOut": null,
-              "duration": 302,
+              "duration": 251,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -101,23 +101,23 @@
               "context": null,
               "code": "cy.deleteRequest('/Deals(' + Id + ')').then(deleteDealResponse => {\n  expect(deleteDealResponse.status).to.equal(200);\n  expect(deleteDealResponse.body).to.be.empty;\n});",
               "err": {},
-              "uuid": "a2951c00-57e0-4b57-b28b-43f4d86b51e8",
-              "parentUUID": "f97ba45f-5a31-4084-84b0-d781aebefe50",
+              "uuid": "c3779ed1-cc7b-4399-b1a2-40ef8fcfe8af",
+              "parentUUID": "cc9bf042-bf61-4f26-8aa7-c4724d7c0bd7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2091633b-0435-4e10-8c2b-2eb0e6774e44",
-            "625ee218-4f62-4fed-8dc9-93e25ab51008",
-            "5031ff61-bfc7-4935-83f3-196966f1a7c1",
-            "a2951c00-57e0-4b57-b28b-43f4d86b51e8"
+            "7d68796f-4e57-4e96-b39d-c45882a1dbd7",
+            "10fb8087-5860-4534-a686-2bcc0fe6665d",
+            "2b3c6831-a3f4-4576-b794-788015561dee",
+            "c3779ed1-cc7b-4399-b1a2-40ef8fcfe8af"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1384,
+          "duration": 1200,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -156,7 +156,8 @@
         "quiet": true,
         "overwrite": false,
         "html": false,
-        "json": true
+        "json": true,
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
       },
       "version": "6.2.0"
     }

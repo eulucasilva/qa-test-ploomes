@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 4,
-    "passes": 4,
+    "passes": 2,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-03-02T12:58:29.318Z",
-    "end": "2023-03-02T13:00:16.913Z",
-    "duration": 107595,
+    "failures": 2,
+    "start": "2023-03-02T17:19:55.958Z",
+    "end": "2023-03-02T17:22:10.610Z",
+    "duration": 134652,
     "testsRegistered": 4,
-    "passPercent": 100,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "dea7618d-927c-43c9-8fda-99bf18d55ef0",
+      "uuid": "5d34a251-f500-46c0-9fdd-0cdca97da13f",
       "title": "",
       "fullFile": "cypress/e2e/frontend/deals.cy.js",
       "file": "cypress/e2e/frontend/deals.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bed05fa5-d35e-4737-a0fe-2b9f03732bcf",
+          "uuid": "5150467b-6b2f-42f5-80b5-669e841b26c0",
           "title": "CRUD Negócios",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar cadastro de um negócio",
               "fullTitle": "CRUD Negócios Validar cadastro de um negócio",
               "timedOut": null,
-              "duration": 30506,
+              "duration": 28133,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_deal.default.listarNegocios();\n_deal.default.cadastrarNegocio();\n_deal.default.validarNegocio(nomeNegocio, valorNegocio);",
               "err": {},
-              "uuid": "10bdece4-ff86-4e55-b800-fa1a5bb55fd9",
-              "parentUUID": "bed05fa5-d35e-4737-a0fe-2b9f03732bcf",
+              "uuid": "97098a36-344b-4ebe-98bc-c77ce09765d0",
+              "parentUUID": "5150467b-6b2f-42f5-80b5-669e841b26c0",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar listagem de negócios",
               "fullTitle": "CRUD Negócios Validar listagem de negócios",
               "timedOut": null,
-              "duration": 16439,
+              "duration": 16062,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "_deal.default.listarNegocios();",
               "err": {},
-              "uuid": "1a9f91f7-908e-47ae-ac21-e48f0836cc8d",
-              "parentUUID": "bed05fa5-d35e-4737-a0fe-2b9f03732bcf",
+              "uuid": "914b0427-4e06-41b4-a90f-6b9d1ee44081",
+              "parentUUID": "5150467b-6b2f-42f5-80b5-669e841b26c0",
               "isHook": false,
               "skipped": false
             },
@@ -74,17 +74,21 @@
               "title": "Validar edição de um negócio",
               "fullTitle": "CRUD Negócios Validar edição de um negócio",
               "timedOut": null,
-              "duration": 35019,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 51324,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "_deal.default.listarNegocios();\n_deal.default.editarNegocio();\n_deal.default.validarNegocio(nomenovoNegocio, valornovoNegocio);",
-              "err": {},
-              "uuid": "67523529-32dd-48e9-a23a-b1e5ae86119b",
-              "parentUUID": "bed05fa5-d35e-4737-a0fe-2b9f03732bcf",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Negócio 2' within the selector: 'div' but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Negócio 2' within the selector: 'div' but never did.\n    at Deal.validarNegocio (webpack:///./cypress/support/pages/deal/index.js:46:36)\n    at Context.eval (webpack:///./cypress/e2e/frontend/deals.cy.js:33:13)",
+                "diff": null
+              },
+              "uuid": "4d8f39d9-a176-431b-b848-e8667a60c0df",
+              "parentUUID": "5150467b-6b2f-42f5-80b5-669e841b26c0",
               "isHook": false,
               "skipped": false
             },
@@ -92,32 +96,37 @@
               "title": "Validar exclusão de um negócio",
               "fullTitle": "CRUD Negócios Validar exclusão de um negócio",
               "timedOut": null,
-              "duration": 25108,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 38551,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "_deal.default.listarNegocios();\n_deal.default.excluirNegocio();\n_deal.default.validarExclusaoNegocio();",
-              "err": {},
-              "uuid": "dc9bfab2-733c-43ae-bf69-91cd0b6cd6e1",
-              "parentUUID": "bed05fa5-d35e-4737-a0fe-2b9f03732bcf",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Negócio 2' within the element: <a#side-menu-close.button-fixed-size.button-fixed-size-big.button-white-light-border.b-1> but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Negócio 2' within the element: <a#side-menu-close.button-fixed-size.button-fixed-size-big.button-white-light-border.b-1> but never did.\n    at Deal.excluirNegocio (webpack:///./cypress/support/pages/deal/index.js:35:20)\n    at Context.eval (webpack:///./cypress/e2e/frontend/deals.cy.js:38:13)",
+                "diff": null
+              },
+              "uuid": "aad846bb-c1c0-4747-8a32-daecfcbdd676",
+              "parentUUID": "5150467b-6b2f-42f5-80b5-669e841b26c0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "10bdece4-ff86-4e55-b800-fa1a5bb55fd9",
-            "1a9f91f7-908e-47ae-ac21-e48f0836cc8d",
-            "67523529-32dd-48e9-a23a-b1e5ae86119b",
-            "dc9bfab2-733c-43ae-bf69-91cd0b6cd6e1"
+            "97098a36-344b-4ebe-98bc-c77ce09765d0",
+            "914b0427-4e06-41b4-a90f-6b9d1ee44081"
           ],
-          "failures": [],
+          "failures": [
+            "4d8f39d9-a176-431b-b848-e8667a60c0df",
+            "aad846bb-c1c0-4747-8a32-daecfcbdd676"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 107072,
+          "duration": 134070,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -156,7 +165,8 @@
         "quiet": true,
         "overwrite": false,
         "html": false,
-        "json": true
+        "json": true,
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
       },
       "version": "6.2.0"
     }

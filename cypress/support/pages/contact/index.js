@@ -9,6 +9,7 @@ class Contact {
 
     listarClientes(){
         cy.get('button').contains('Clientes').click();
+        cy.get('a').contains('Pessoas').click().wait(5000);
         cy.get('a').contains('Pessoas').click();
         cy.get('a').contains('Novo cliente').should('be.visible'); 
         cy.url().should('contain', 'table')

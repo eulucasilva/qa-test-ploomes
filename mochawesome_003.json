@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-03T01:36:03.153Z",
-    "end": "2023-03-03T01:37:34.786Z",
-    "duration": 91633,
+    "start": "2023-03-03T13:10:25.327Z",
+    "end": "2023-03-03T13:12:00.644Z",
+    "duration": 95317,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "09c1412c-0d4f-410a-aa97-e9b9cce963c5",
+      "uuid": "6d97fabc-584d-49df-a7ac-4e3141b46739",
       "title": "",
       "fullFile": "cypress/e2e/frontend/deals.cy.js",
       "file": "cypress/e2e/frontend/deals.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3379823c-496e-4f7c-ba82-c85c6de736e9",
+          "uuid": "2d09ffa4-6337-48d4-9eda-16bd5ab32b72",
           "title": "CRUD Negócios",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar cadastro de um negócio",
               "fullTitle": "CRUD Negócios Validar cadastro de um negócio",
               "timedOut": null,
-              "duration": 26501,
+              "duration": 27007,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_deal.default.listarNegocios();\n_deal.default.cadastrarNegocio();\n_deal.default.validarNegocio(nomeNegocio, valorNegocio);",
               "err": {},
-              "uuid": "e20e376a-c5ca-4614-835d-10851db0be83",
-              "parentUUID": "3379823c-496e-4f7c-ba82-c85c6de736e9",
+              "uuid": "6edc08b4-49de-48ae-88e3-a2c117acc7e3",
+              "parentUUID": "2d09ffa4-6337-48d4-9eda-16bd5ab32b72",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar listagem de negócios",
               "fullTitle": "CRUD Negócios Validar listagem de negócios",
               "timedOut": null,
-              "duration": 15225,
+              "duration": 15926,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "_deal.default.listarNegocios();",
               "err": {},
-              "uuid": "228fb67e-f977-435b-95de-4cad2cd1dead",
-              "parentUUID": "3379823c-496e-4f7c-ba82-c85c6de736e9",
+              "uuid": "fbf32153-949a-4335-96b2-d2bbc6e06e4c",
+              "parentUUID": "2d09ffa4-6337-48d4-9eda-16bd5ab32b72",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Validar edição de um negócio",
               "fullTitle": "CRUD Negócios Validar edição de um negócio",
               "timedOut": null,
-              "duration": 26776,
+              "duration": 30716,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "_deal.default.listarNegocios();\n_deal.default.editarNegocio();\n_deal.default.validarNegocio(nomenovoNegocio, valornovoNegocio);",
               "err": {},
-              "uuid": "e4b03411-d5ce-42f0-89db-3a543b2dde4d",
-              "parentUUID": "3379823c-496e-4f7c-ba82-c85c6de736e9",
+              "uuid": "9f454b19-760c-4951-800c-77d4d7fa686c",
+              "parentUUID": "2d09ffa4-6337-48d4-9eda-16bd5ab32b72",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "Validar exclusão de um negócio",
               "fullTitle": "CRUD Negócios Validar exclusão de um negócio",
               "timedOut": null,
-              "duration": 22605,
+              "duration": 21246,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -101,23 +101,23 @@
               "context": null,
               "code": "_deal.default.listarNegocios();\n_deal.default.excluirNegocio();\n_deal.default.validarExclusaoNegocio();",
               "err": {},
-              "uuid": "cbbdd17d-80eb-44c8-a15a-d3d467169a6c",
-              "parentUUID": "3379823c-496e-4f7c-ba82-c85c6de736e9",
+              "uuid": "8ae18425-381c-4e8c-a9a3-191318bc1d69",
+              "parentUUID": "2d09ffa4-6337-48d4-9eda-16bd5ab32b72",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e20e376a-c5ca-4614-835d-10851db0be83",
-            "228fb67e-f977-435b-95de-4cad2cd1dead",
-            "e4b03411-d5ce-42f0-89db-3a543b2dde4d",
-            "cbbdd17d-80eb-44c8-a15a-d3d467169a6c"
+            "6edc08b4-49de-48ae-88e3-a2c117acc7e3",
+            "fbf32153-949a-4335-96b2-d2bbc6e06e4c",
+            "9f454b19-760c-4951-800c-77d4d7fa686c",
+            "8ae18425-381c-4e8c-a9a3-191318bc1d69"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 91107,
+          "duration": 94895,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -157,7 +157,7 @@
         "overwrite": false,
         "html": false,
         "json": true,
-        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - QA PLOOMES"
       },
       "version": "6.2.0"
     }

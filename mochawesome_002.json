@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-03T01:34:01.430Z",
-    "end": "2023-03-03T01:35:40.726Z",
-    "duration": 99296,
+    "start": "2023-03-03T13:08:25.823Z",
+    "end": "2023-03-03T13:10:03.982Z",
+    "duration": 98159,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "21e9080b-54f9-47a4-bcd7-5b9c2414200a",
+      "uuid": "48e75867-ca77-47b8-b818-32d38f554f44",
       "title": "",
       "fullFile": "cypress/e2e/frontend/contacts.cy.js",
       "file": "cypress/e2e/frontend/contacts.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "74674b27-de34-4a3d-9f85-4be983ff7af4",
+          "uuid": "30920ee1-38c9-40e6-a193-e08114aa8029",
           "title": "CRUD Clientes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar cadastro de um cliente",
               "fullTitle": "CRUD Clientes Validar cadastro de um cliente",
               "timedOut": null,
-              "duration": 36035,
+              "duration": 35051,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_contact.default.listarClientes();\n_contact.default.cadastrarCliente();\n_contact.default.validarCliente(nomeCliente);",
               "err": {},
-              "uuid": "66961eea-60d2-4ee1-baa1-a1e2ff2dc14d",
-              "parentUUID": "74674b27-de34-4a3d-9f85-4be983ff7af4",
+              "uuid": "bcc0fe4d-d312-4782-bd64-508c2877ce40",
+              "parentUUID": "30920ee1-38c9-40e6-a193-e08114aa8029",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validar listagem de clientes",
               "fullTitle": "CRUD Clientes Validar listagem de clientes",
               "timedOut": null,
-              "duration": 17328,
+              "duration": 17726,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "_contact.default.listarClientes();",
               "err": {},
-              "uuid": "ef75879b-c1f3-4de0-8e3c-0992c4ce1ad0",
-              "parentUUID": "74674b27-de34-4a3d-9f85-4be983ff7af4",
+              "uuid": "0d619014-e635-4363-89ef-4162c7cb3a68",
+              "parentUUID": "30920ee1-38c9-40e6-a193-e08114aa8029",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Validar edição de um cliente",
               "fullTitle": "CRUD Clientes Validar edição de um cliente",
               "timedOut": null,
-              "duration": 23166,
+              "duration": 23926,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "_contact.default.listarClientes();\n_contact.default.editarCliente();\n_contact.default.validarCliente(nomeNovoCliente);",
               "err": {},
-              "uuid": "bf04a6b2-68c6-44d9-8e4f-cffb9246f0ef",
-              "parentUUID": "74674b27-de34-4a3d-9f85-4be983ff7af4",
+              "uuid": "5dda5760-1d10-4613-9551-51f45374ba6e",
+              "parentUUID": "30920ee1-38c9-40e6-a193-e08114aa8029",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "Validar exclusão de um cliente",
               "fullTitle": "CRUD Clientes Validar exclusão de um cliente",
               "timedOut": null,
-              "duration": 22332,
+              "duration": 21045,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -101,23 +101,23 @@
               "context": null,
               "code": "_contact.default.listarClientes();\n_contact.default.excluirCliente();\n_contact.default.validarExclusaoCliente();",
               "err": {},
-              "uuid": "6371abd5-c507-4fe6-ab8f-394ea6f3b186",
-              "parentUUID": "74674b27-de34-4a3d-9f85-4be983ff7af4",
+              "uuid": "2c7e355a-a2fd-4aae-aeaa-02cd419f30b1",
+              "parentUUID": "30920ee1-38c9-40e6-a193-e08114aa8029",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "66961eea-60d2-4ee1-baa1-a1e2ff2dc14d",
-            "ef75879b-c1f3-4de0-8e3c-0992c4ce1ad0",
-            "bf04a6b2-68c6-44d9-8e4f-cffb9246f0ef",
-            "6371abd5-c507-4fe6-ab8f-394ea6f3b186"
+            "bcc0fe4d-d312-4782-bd64-508c2877ce40",
+            "0d619014-e635-4363-89ef-4162c7cb3a68",
+            "5dda5760-1d10-4613-9551-51f45374ba6e",
+            "2c7e355a-a2fd-4aae-aeaa-02cd419f30b1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 98861,
+          "duration": 97748,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -157,7 +157,7 @@
         "overwrite": false,
         "html": false,
         "json": true,
-        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - QA PLOOMES"
       },
       "version": "6.2.0"
     }

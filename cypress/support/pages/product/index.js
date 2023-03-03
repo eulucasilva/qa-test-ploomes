@@ -25,11 +25,13 @@ class Product {
 
     excluirProduto (){
         cy.get('div').contains(nomeGrupo).click();
-        cy.get('a[class="button button-white"]').click();
+        cy.get(el.btnExcluirGrupo).click();
         cy.get('a').contains('Confirmar').click();
     }
 
     validarProduto(){
+        cy.get(el.dropDownProdutos).click();
+        cy.get('a').contains('Produtos').click();
         cy.get('div').contains(nomeProduto).should('be.visible');
     }
 }

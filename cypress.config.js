@@ -8,7 +8,7 @@ module.exports = defineConfig({
     baseUrl: 'https://api2.ploomes.com',
     $schema: 'https://on.cypress.io/cypress.schema.json',
     specPattern: 'cypress/e2e',
-    defaultCommandTimeout: 20000, 
+    defaultCommandTimeout: 30000, 
     
   }, 
   urlFront: 'https://app10.ploomes.com/',

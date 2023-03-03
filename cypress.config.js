@@ -21,7 +21,7 @@ module.exports = defineConfig({
         "overwrite": false,
         "html": false,
         "json": true,
-        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - PLOOMES"
+        "reportTitle": "RELATÓRIO DE EXECUÇÃO DE TESTES - QA PLOOMES",
     }
   }
 });

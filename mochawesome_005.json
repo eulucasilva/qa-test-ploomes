@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 3,
-    "passes": 2,
+    "passes": 3,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-03-03T13:35:06.091Z",
-    "end": "2023-03-03T13:36:54.441Z",
-    "duration": 108350,
+    "failures": 0,
+    "start": "2023-03-03T13:49:47.835Z",
+    "end": "2023-03-03T13:51:12.483Z",
+    "duration": 84648,
     "testsRegistered": 3,
-    "passPercent": 66.66666666666666,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e33c7f38-01c7-4cc9-bb3b-e3961a0d84ee",
+      "uuid": "7b6ba885-ca41-4994-aa8e-096d012e051c",
       "title": "",
       "fullFile": "cypress/e2e/frontend/products.cy.js",
       "file": "cypress/e2e/frontend/products.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "76235e4a-6581-4a1f-895e-92858912b418",
+          "uuid": "8450533d-0364-49e7-8a5b-0b0dbb864b86",
           "title": "CRUD Produtos",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validar cadastro de um produto",
               "fullTitle": "CRUD Produtos Validar cadastro de um produto",
               "timedOut": null,
-              "duration": 46885,
+              "duration": 46476,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_product.default.listarProdutos();\n_product.default.cadastrarProdutos();\n_product.default.validarProduto();",
               "err": {},
-              "uuid": "2e1410a9-b77c-49bb-ad48-f9cc85f89953",
-              "parentUUID": "76235e4a-6581-4a1f-895e-92858912b418",
+              "uuid": "0d7d4c66-7d64-4529-9477-066b172c95d6",
+              "parentUUID": "8450533d-0364-49e7-8a5b-0b0dbb864b86",
               "isHook": false,
               "skipped": false
             },
@@ -56,21 +56,17 @@
               "title": "Validar listagem de um produto",
               "fullTitle": "CRUD Produtos Validar listagem de um produto",
               "timedOut": null,
-              "duration": 39830,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 16039,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "_product.default.listarProdutos();",
-              "err": {
-                "message": "CypressError: Timed out retrying after 30000ms: `cy.contains()` failed because it requires a DOM element, window or document.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(button)",
-                "estack": "CypressError: Timed out retrying after 30000ms: `cy.contains()` failed because it requires a DOM element, window or document.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(button)\n    at isElement (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:151988:70)\n    at validateType (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:151846:14)\n    at Object.isType (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:151877:7)\n    at <unknown> (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:139141:22)\n    at Object.subjectFn (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:149851:16)\n    at $Cy.verifyUpcomingAssertions (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:131091:31)\n    at onRetry (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:149842:15)\n    at tryCatcher (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise.attempt.Promise.try (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6188:29)\n    at whenStable (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:146732:65)\n    at <unknown> (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:146173:14)\n    at tryCatcher (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:7031:18)\n    at Promise._fulfill (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:6975:18)\n    at <unknown> (https://api2.ploomes.com/__cypress/runner/cypress_runner.js:8589:46)\nFrom Your Spec Code:\n    at Product.listarProdutos (webpack:///./cypress/support/pages/product/index.js:10:25)\n    at Context.eval (webpack:///./cypress/e2e/frontend/products.cy.js:22:16)",
-                "diff": null
-              },
-              "uuid": "03816182-c830-4721-bd3e-77ba6de5c4aa",
-              "parentUUID": "76235e4a-6581-4a1f-895e-92858912b418",
+              "err": {},
+              "uuid": "a58d4bd9-9fbe-4bda-bb99-ecadc7846e8a",
+              "parentUUID": "8450533d-0364-49e7-8a5b-0b0dbb864b86",
               "isHook": false,
               "skipped": false
             },
@@ -78,7 +74,7 @@
               "title": "Validar exclusão de um produto",
               "fullTitle": "CRUD Produtos Validar exclusão de um produto",
               "timedOut": null,
-              "duration": 21385,
+              "duration": 21792,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -87,23 +83,22 @@
               "context": null,
               "code": "_product.default.listarProdutos();\n_product.default.excluirProduto();",
               "err": {},
-              "uuid": "ec032d7f-c0ca-4d40-8507-625abc0f5ce4",
-              "parentUUID": "76235e4a-6581-4a1f-895e-92858912b418",
+              "uuid": "29997186-9044-414c-8f42-9bc1482e3fea",
+              "parentUUID": "8450533d-0364-49e7-8a5b-0b0dbb864b86",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2e1410a9-b77c-49bb-ad48-f9cc85f89953",
-            "ec032d7f-c0ca-4d40-8507-625abc0f5ce4"
+            "0d7d4c66-7d64-4529-9477-066b172c95d6",
+            "a58d4bd9-9fbe-4bda-bb99-ecadc7846e8a",
+            "29997186-9044-414c-8f42-9bc1482e3fea"
           ],
-          "failures": [
-            "03816182-c830-4721-bd3e-77ba6de5c4aa"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 108100,
+          "duration": 84307,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
